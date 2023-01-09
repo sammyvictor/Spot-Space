@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,100;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Spot Space Limited</title>
+</head>
+<body>
+<!-- Navigation Bar  -->
+    <div id="navbar">
+        <nav>
+            <a href="index.html"><img id="logo" src="images/SpotSpaceLogo.png" alt="Spot Space Limited Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">PROPERTIES</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">NEWS & BLOGS</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </div>
+
+<!-- Property Slides  -->
+    
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-300px";
+        }
+        window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "0px 0px";
+            document.getElementById("logo").style.fontSize = "25px";
+        } else {
+            document.getElementById("navbar").style.padding = "30px 0px";
+            document.getElementById("logo").style.fontSize = "35px";
+        }
+    }
+    </script> 
+</body>
+</html>
