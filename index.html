@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,50 @@
     </div>
 
 <!-- Property Slides  -->
-    
+    <div class="slider">
+        <div class="slides">
+            <img src="images/IMG_1025.JPG" alt="1">
+            <img src="images/IMG_1030.JPG" alt="1">
+            <img src="images/IMG_1408.JPG" alt="1">
+            <img src="images/IMG_1421.JPG" alt="1">
+            <img src="images/RUMURUTI PLOTS (1).jpg
+            " alt="1">
+        </div>
+    </div>
+
+<!-- Welcome Message  -->
+    <div class="welcome-message">
+        <h1>Way To Own Properties</h1>
+        <p>Spot Space Limited offers affordable plots for sale in many parts of Kenya. We are excited to walk with you in your land investment journey</p>
+    </div>
+
+<!-- Featured Properties  -->
+    <div class="featured-properties">
+        <h1>Our Properties</h1>
+        <p>These are the current projects that we have</p>
+        <div class="properties">
+            <div class="property-cards">
+                <div class="card-image acacia-img"></div>
+                <h2>Acacia Estate - Rumuruti</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, atque.</p>
+                <h3 class="prices">KSH 450,000</h3>
+            </div>
+            <div class="property-cards">
+                <div class="card-image olive-img"></div>
+                <h2>Olive Estate - Rumuruti</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, atque.</p>
+                <h3 class="prices">KSH 450,000</h3>
+            </div>
+            <div class="property-cards">
+                <div class="card-image thorn-img "></div>
+                <h2>Thorn Groove Estate - Kitengela</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, atque.</p>
+                <h3 class="prices">KSH 450,000</h3>
+            </div>
+        </div>
+    </div>
+
+
 
     <script>
         var navLinks = document.getElementById("navLinks");
@@ -47,15 +90,15 @@
         }
         window.onscroll = function() {scrollFunction()};
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("navbar").style.padding = "0px 0px";
-            document.getElementById("logo").style.fontSize = "25px";
-        } else {
-            document.getElementById("navbar").style.padding = "30px 0px";
-            document.getElementById("logo").style.fontSize = "35px";
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.padding = "0px 0px";
+                document.getElementById("logo").style.fontSize = "25px";
+            } else {
+                document.getElementById("navbar").style.padding = "30px 0px";
+                document.getElementById("logo").style.fontSize = "35px";
+            }
         }
-    }
     </script> 
 </body>
 </html>
